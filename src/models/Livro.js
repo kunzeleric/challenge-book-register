@@ -12,11 +12,10 @@ const schemaLivro = new mongoose.Schema({
     },
     num_paginas: {
         type: Number,
-        required: true
+        default: 0
     },
     isbn: {
         type: String,
-        default: ""
     },
     editora: {
         type: String
