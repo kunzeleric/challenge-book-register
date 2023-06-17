@@ -16,9 +16,11 @@ const schemaLivro = new mongoose.Schema({
     },
     isbn: {
         type: String,
+        default: ""
     },
     editora: {
-        type: String
+        type: String,
+        default: ""
     }
 })
 
