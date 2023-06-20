@@ -5,7 +5,7 @@ Challenge proposed by DNC to create an API that allows users to store, edit and 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<img src="https://github.com/kunzeleric/challenge-book-register/assets/114115220/1d30ce25-c296-4164-954e-efb344a1998a" width="400" height="250"/>
 
 
 ## Technologies
