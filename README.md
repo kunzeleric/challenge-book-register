@@ -3,10 +3,11 @@
 
 Challenge proposed by DNC to create an API that allows users to store, edit and remove books. It connects with the front-end repo provided by the teacher.
 
+Front-end Repo. => <a href="https://github.com/vitormigoto/projeto-react-dnc">LINK</a>
+
 ## Screenshots
 
 <img src="https://github.com/kunzeleric/challenge-book-register/assets/114115220/1d30ce25-c296-4164-954e-efb344a1998a" width="600" height="250"/>
-
 
 ## Technologies
 
