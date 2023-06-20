@@ -79,11 +79,13 @@ Front-end Repo. => <a href="https://github.com/vitormigoto/projeto-react-dnc">LI
 
 ## Setup
 
-After cloning or downloading the project, use the commands below in the terminal.
+After cloning or downloading the project, use the commands below in the terminal. 
+Make sure you have "Nodemon" installed in your computer.
 
 ```bash
   npm install my-project
   cd my-project
+  npm i nodemon -g
   npm run dev
 ```
     
