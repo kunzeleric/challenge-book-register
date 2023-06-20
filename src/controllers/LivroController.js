@@ -26,7 +26,7 @@ class LivroController {
     static updateBook = async (req, res) => {
         const id = req.params.id;
         try {
-            await Livro.findByIdAndUpdate(id, { $set: req.body });
+            await Livro.findOneAndUpdate( {id}, {$set: req.body });
             res.status(200).json({ msg: 'Book updated successfully' });
         } catch (error) {
             res.status(500).json(error);
@@ -37,8 +37,8 @@ class LivroController {
     static deleteBook = async (req, res) => {
         const id = req.params.id;
         try {
-            await Livro.findByIdAndDelete(id);
-            res.status(200).json({ msg: 'Book deleted successfully' });
+            let livro = await Livro.findOneAndDelete({id});
+            res.status(200).json({ msg: 'Book deleted successfully', livro });
         } catch (error) {
             res.status(500).json(error);
         }
@@ -48,8 +48,8 @@ class LivroController {
         static getBookById = async (req, res) => {
             const id = req.params.id;
             try {
-                let livro = await Livro.findOne({_id: id});
-                res.status(200).json({livro, msg:'Book found!'});
+                let livro = await Livro.findOne({id});
+                res.status(200).json(livro);
             } catch (error) {
                 res.status(500).json(error);
             }
